@@ -1,0 +1,170 @@
+.characteristics {
+
+	&-list {
+		list-style: none;
+		margin: 0 35px;
+		padding: 0;
+		font-size: 25px;
+
+
+		&_full {
+			width: 285px;
+			font-size: 17px;
+			margin-left: 22px;
+		}
+
+		&__block {
+			float: left;
+		}
+	}
+
+	@items-array: dry wet ice snow fuel-economy comfort;
+
+	&-item {
+		margin: 0 20px 5px -3px;
+
+		@length: length(@items-array);
+		@icon-dimension: 37px;
+
+		&::before {
+			content: "";
+			display: inline-block;
+			width: @icon-dimension;
+			height: @icon-dimension;
+			margin-right: 10px;
+			background-image: url(~'@{image-path}ct-insp-2015-spring-winter-tires-icons-sprite_big.png');
+			vertical-align: middle;
+		}
+
+		.icon (@i) when (@i > 0) {
+
+			@name: extract(@items-array, @i);
+
+			&_@{name}::before {
+				background-position: 0 -1 * @icon-dimension * (@i - 1);
+			}
+
+			.icon(@i - 1);
+		}
+
+		.icon(@length);
+
+		&__title {
+			display: inline-block;
+			vertical-align: middle;
+			font-family: "Gotham Bold";
+			text-transform: uppercase;
+		}
+	}
+
+	&-item-full {
+		margin: 0 0 15px 0;
+		line-height: 17px;
+		text-align: right;
+
+
+		&__title {
+			margin-right: 40px;
+		}
+
+		&__score {
+			display: inline-block;
+			position: relative;
+			vertical-align: middle;
+			width: 100px;
+			height: 20px;
+			text-align: left;
+			background: white;
+			border: 1px solid black;
+
+			@lengthSmall: length(@items-array);
+			@icon-dimensionSmall: 28px;
+
+			&::before {
+				content: "";
+				position: absolute;
+				top: -5px;
+				left: -38px;
+				display: inline-block;
+				width: @icon-dimensionSmall;
+				height: @icon-dimensionSmall;
+				margin-left: 5px;
+				margin-right: 5px;
+				background-image: url(~'@{image-path}ct-insp-2015-spring-winter-tires-icons-sprite_small.png');
+				vertical-align: middle;
+			}
+
+			.iconSmall (@i) when (@i > 0) {
+
+				@name: extract(@items-array, @i);
+
+				&_@{name}::before {
+					background-position: 0 -1 * @icon-dimensionSmall * (@i - 1);
+				}
+
+				.iconSmall(@i - 1);
+			}
+
+			.iconSmall(@lengthSmall);
+		}
+
+		&__score-current {
+			position: absolute;
+			top: 0;
+			height: 20px;
+			background: @blue;
+			z-index: 1;
+
+			@lengthSmall: length(@items-array);
+			@widthArray1: 97.4% 100% 97.1% 99.7% 100% 100%;
+			@widthArray2: 94.5% 91% 71.8% 100% 89.4% 92.6%;
+			@widthArray3: 97.6% 91.7% 92.2% 86.5% 89.9% 82.2%;
+			.iconSmall (@i) when (@i > 0) {
+
+				@name: extract(@items-array, @i);
+				@width1: extract(@widthArray1, @i);
+				@width2: extract(@widthArray2, @i);
+				@width3: extract(@widthArray3, @i);
+
+				&_@{name}1 {
+					width: @width1;
+				}
+				&_@{name}2 {
+					width: @width2;
+				}
+				&_@{name}3 {
+					width: @width3;
+				}
+
+				.iconSmall(@i - 1);
+			}
+
+			.iconSmall(@lengthSmall);
+		}
+
+		&__score-separators{
+			position: absolute;
+			top: 0;
+			width: 100px;
+			z-index: 2;
+		}
+
+		&__score-separator {
+			display: inline-block;
+			box-sizing: border-box;
+			width: 10%;
+			height: 20px;
+			border-right: 1px solid black;
+			z-index: 1;
+		}
+
+		&__score_number {
+			width: 45px;
+			margin: 0;
+			display: inline-block;
+			font-family: "Gotham Bold";
+			font-size: 17px;
+			vertical-align: middle;
+		}
+	}
+}

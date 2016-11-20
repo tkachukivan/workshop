@@ -1,0 +1,176 @@
+.tile {
+	position: relative;
+	&__title {
+		margin: 35px 0 5px 22px;
+		font-family: "Gotham Medium Condensed";
+		font-size: 50px;
+		line-height: 40px;
+		text-transform: uppercase;
+
+		&_min {
+			width: 245px;
+		}
+
+		&_list {
+			font-family: "Gotham Bold";
+			font-size: 21px;
+			line-height: 25px;
+			margin-bottom: 0;
+		}
+
+		&_video {
+			margin: 220px 0 0 0;
+			font-size: 27px;
+			text-align: center;
+		}
+
+		&_bottom {
+			margin: 25px 40px 5px 31px;
+		}
+	}
+
+	&__description {
+		margin: 0 0 0 22px;
+		width: 272px;
+        font-family: "Gotham Light Regular";
+        font-size: 17px;
+        word-spacing: -0.1em;
+
+		&_min {
+			width: 245px;
+		}
+
+		&_bottom {
+			width: 380px;
+			margin-left: 31px;
+			margin-bottom: 10px;
+		}
+
+		&_icon {
+			width: 380px;
+
+		}
+
+		&_icon::before {
+			content: '';
+			display: inline-block;
+			width: 68px;
+			height: 68px;
+			margin-right: 10px;
+			background: url(~"@{image-path}ct-insp-2015-spring-winter-tires-tab-1-label-1.png");
+		}
+
+		&_blue {
+			font-family: "Gotham Bold";
+			color: #00aeef;
+		}
+
+		&_clear {
+			display: inline-block;
+			vertical-align: super;
+			margin: 0;
+			padding: 0;
+		}
+	}
+
+	&__index {
+		font-size: 55%;
+	}
+
+	&__anchor {
+		display: inline-block;
+		font-family: "Gotham Bold";
+		font-size: 16px;
+		text-decoration: none;
+		text-transform: uppercase;
+		color: black;
+	}
+	&__anchor::after {
+		content: '>';
+		display: inline-block;
+		margin-left: 5px;
+	}
+
+	&_white {
+		color: white;
+	}
+
+	&__button {
+		position: absolute;
+		top: -120px;
+		left: 272px / 2 - 31px;
+		width: 62px;
+		height: 62px;
+		background: url(~"@{image-path}ct-insp-2015-spring-winter-tires-icon-play.png");
+		border: none;
+		border-radius: 100%;
+	}
+
+	&-list {
+		padding: 0;
+		list-style: none;
+		width: 100%;
+
+		&-item::after {
+			content: '>';
+			display: inline-block;
+			font-family: "Gotham Bold";
+			margin-left: 5px;
+		}
+
+		&-item__title {
+			font-size: 16px;
+			font-family: "Gotham Bold";
+			color: white;
+			text-decoration: none;
+			text-transform: uppercase;
+		}
+	}
+	&__block {
+		float: left;
+
+		&_characteristics {
+			margin-top: 20px;
+			margin-left: -50px;
+		}
+	}
+
+	&-table {
+		margin-top: 25px;
+		width: 380px;
+		border-collapse: collapse;
+		font-family: "Gotham Medium Condensed";
+		font-size: 17px;
+		line-height: 19px;
+		text-transform: uppercase;
+		color: white;
+
+		&__cell {
+			padding: 6px;
+			vertical-align: top;
+			border: 2px solid white;
+		}
+
+		&__row {
+			&_black {
+				background: black;
+			}
+
+			&_green {
+				background: #1c9553;
+			}
+
+			&_yellow {
+				background: #cdae18;
+			}
+
+			&_orange {
+				background: #d67e19;
+			}
+
+			&_red {
+				background: #d52229;
+			}
+		}
+	}
+}

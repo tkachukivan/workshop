@@ -1,0 +1,425 @@
+@import "../fonts/gotham-bold/css/font-face.css";
+@import "../fonts/gotham-book/css/font-face.css";
+@import "../fonts/gotham-book-condensed/css/font-face.css";
+@import "../fonts/gotham-book-narrow/css/font-face.css";
+@import "../fonts/gotham-light/css/font-face.css";
+@import "../fonts/gotham-light-condensed/css/font-face.css";
+@import "../fonts/gotham-medium/css/font-face.css";
+@import "../fonts/gotham-medium-condensed/css/font-face.css";
+body {
+  background: #fff;
+  font-family: "Gotham Light", sans-serif;
+  font-size: 17px;
+  line-height: 25px;
+  color: #000;
+}
+.layout__wrapper {
+  width: 1118px;
+  margin: auto;
+}
+.layout__column {
+  float: left;
+}
+.layout__column_main {
+  width: 846px;
+}
+.layout__column_sidebar {
+  width: 272px;
+}
+.layout__tile {
+  float: left;
+  margin: 5px;
+  background: red;
+}
+.layout__tile.b-12 {
+  background: #6db0da;
+  background-size: cover;
+}
+.layout__tile.b-11 {
+  background: url(../i/ct-insp-2015-spring-winter-tires-tab-1-img-10.jpg);
+  background-size: cover;
+}
+.layout__tile.b-10 {
+  background: url(../i/ct-insp-2015-spring-winter-tires-tab-1-video-3.jpg);
+  background-size: cover;
+}
+.layout__tile.b-9 {
+  background: url(../i/ct-insp-2015-spring-winter-tires-tab-1-video-2.jpg);
+  background-size: cover;
+}
+.layout__tile.b-8 {
+  background: #6db0da;
+  background-size: cover;
+}
+.layout__tile.b-7 {
+  background: url(../i/ct-insp-2015-spring-winter-tires-tab-1-video-1.jpg);
+  background-size: cover;
+}
+.layout__tile.b-6 {
+  background: url(../i/ct-insp-2015-spring-winter-tires-tab-1-img-9.jpg);
+  background-size: cover;
+}
+.layout__tile.b-5 {
+  background: url(../i/ct-insp-2015-spring-winter-tires-tab-3-img-5.jpg);
+  background-size: cover;
+}
+.layout__tile.b-4 {
+  background: url(../i/ct-insp-2015-spring-winter-tires-tab-3-img-4.jpg);
+  background-size: cover;
+}
+.layout__tile.b-3 {
+  background: url(../i/ct-insp-2015-spring-winter-tires-tab-3-img-3.jpg);
+  background-size: cover;
+}
+.layout__tile.b-2 {
+  background: url(../i/ct-insp-2015-spring-winter-tires-tab-1-img-9.jpg);
+  background-size: cover;
+}
+.layout__tile.b-1 {
+  background: url(../i/ct-insp-2015-spring-winter-tires-tab-1-img-1.jpg);
+  background-size: cover;
+}
+.layout__tile.w-3 {
+  width: 836px;
+}
+.layout__tile.w-2 {
+  width: 554px;
+}
+.layout__tile.w-1 {
+  width: 272px;
+}
+.layout__tile.h-2 {
+  height: 554px;
+}
+.layout__tile.h-1 {
+  height: 272px;
+}
+.tile {
+  position: relative;
+}
+.tile__title {
+  margin: 35px 0 5px 22px;
+  font-family: "Gotham Medium Condensed";
+  font-size: 50px;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+.tile__title_min {
+  width: 245px;
+}
+.tile__title_list {
+  font-family: "Gotham Bold";
+  font-size: 21px;
+  line-height: 25px;
+  margin-bottom: 0;
+}
+.tile__title_video {
+  margin: 220px 0 0 0;
+  font-size: 27px;
+  text-align: center;
+}
+.tile__title_bottom {
+  margin: 25px 40px 5px 31px;
+}
+.tile__description {
+  margin: 0 0 0 22px;
+  width: 272px;
+  font-family: "Gotham Light Regular";
+  font-size: 17px;
+  word-spacing: -0.1em;
+}
+.tile__description_min {
+  width: 245px;
+}
+.tile__description_bottom {
+  width: 380px;
+  margin-left: 31px;
+  margin-bottom: 10px;
+}
+.tile__description_icon {
+  width: 380px;
+}
+.tile__description_icon::before {
+  content: '';
+  display: inline-block;
+  width: 68px;
+  height: 68px;
+  margin-right: 10px;
+  background: url(../i/ct-insp-2015-spring-winter-tires-tab-1-label-1.png);
+}
+.tile__description_blue {
+  font-family: "Gotham Bold";
+  color: #00aeef;
+}
+.tile__description_clear {
+  display: inline-block;
+  vertical-align: super;
+  margin: 0;
+  padding: 0;
+}
+.tile__index {
+  font-size: 55%;
+}
+.tile__anchor {
+  display: inline-block;
+  font-family: "Gotham Bold";
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+}
+.tile__anchor::after {
+  content: '>';
+  display: inline-block;
+  margin-left: 5px;
+}
+.tile_white {
+  color: white;
+}
+.tile__button {
+  position: absolute;
+  top: -120px;
+  left: 105px;
+  width: 62px;
+  height: 62px;
+  background: url(../i/ct-insp-2015-spring-winter-tires-icon-play.png);
+  border: none;
+  border-radius: 100%;
+}
+.tile-list {
+  padding: 0;
+  list-style: none;
+  width: 100%;
+}
+.tile-list-item::after {
+  content: '>';
+  display: inline-block;
+  font-family: "Gotham Bold";
+  margin-left: 5px;
+}
+.tile-list-item__title {
+  font-size: 16px;
+  font-family: "Gotham Bold";
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.tile__block {
+  float: left;
+}
+.tile__block_characteristics {
+  margin-top: 20px;
+  margin-left: -50px;
+}
+.tile-table {
+  margin-top: 25px;
+  width: 380px;
+  border-collapse: collapse;
+  font-family: "Gotham Medium Condensed";
+  font-size: 17px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: white;
+}
+.tile-table__cell {
+  padding: 6px;
+  vertical-align: top;
+  border: 2px solid white;
+}
+.tile-table__row_black {
+  background: black;
+}
+.tile-table__row_green {
+  background: #1c9553;
+}
+.tile-table__row_yellow {
+  background: #cdae18;
+}
+.tile-table__row_orange {
+  background: #d67e19;
+}
+.tile-table__row_red {
+  background: #d52229;
+}
+.characteristics-list {
+  list-style: none;
+  margin: 0 35px;
+  padding: 0;
+  font-size: 25px;
+}
+.characteristics-list_full {
+  width: 285px;
+  font-size: 17px;
+  margin-left: 22px;
+}
+.characteristics-list__block {
+  float: left;
+}
+.characteristics-item {
+  margin: 0 20px 5px -3px;
+}
+.characteristics-item::before {
+  content: "";
+  display: inline-block;
+  width: 37px;
+  height: 37px;
+  margin-right: 10px;
+  background-image: url(../i/ct-insp-2015-spring-winter-tires-icons-sprite_big.png);
+  vertical-align: middle;
+}
+.characteristics-item_comfort::before {
+  background-position: 0 -185px;
+}
+.characteristics-item_fuel-economy::before {
+  background-position: 0 -148px;
+}
+.characteristics-item_snow::before {
+  background-position: 0 -111px;
+}
+.characteristics-item_ice::before {
+  background-position: 0 -74px;
+}
+.characteristics-item_wet::before {
+  background-position: 0 -37px;
+}
+.characteristics-item_dry::before {
+  background-position: 0 0px;
+}
+.characteristics-item__title {
+  display: inline-block;
+  vertical-align: middle;
+  font-family: "Gotham Bold";
+  text-transform: uppercase;
+}
+.characteristics-item-full {
+  margin: 0 0 15px 0;
+  line-height: 17px;
+  text-align: right;
+}
+.characteristics-item-full__title {
+  margin-right: 40px;
+}
+.characteristics-item-full__score {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  width: 100px;
+  height: 20px;
+  text-align: left;
+  background: white;
+  border: 1px solid black;
+}
+.characteristics-item-full__score::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -38px;
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  margin-left: 5px;
+  margin-right: 5px;
+  background-image: url(../i/ct-insp-2015-spring-winter-tires-icons-sprite_small.png);
+  vertical-align: middle;
+}
+.characteristics-item-full__score_comfort::before {
+  background-position: 0 -140px;
+}
+.characteristics-item-full__score_fuel-economy::before {
+  background-position: 0 -112px;
+}
+.characteristics-item-full__score_snow::before {
+  background-position: 0 -84px;
+}
+.characteristics-item-full__score_ice::before {
+  background-position: 0 -56px;
+}
+.characteristics-item-full__score_wet::before {
+  background-position: 0 -28px;
+}
+.characteristics-item-full__score_dry::before {
+  background-position: 0 0px;
+}
+.characteristics-item-full__score-current {
+  position: absolute;
+  top: 0;
+  height: 20px;
+  background: #6db0da;
+  z-index: 1;
+}
+.characteristics-item-full__score-current_comfort1 {
+  width: 100%;
+}
+.characteristics-item-full__score-current_comfort2 {
+  width: 92.6%;
+}
+.characteristics-item-full__score-current_comfort3 {
+  width: 82.2%;
+}
+.characteristics-item-full__score-current_fuel-economy1 {
+  width: 100%;
+}
+.characteristics-item-full__score-current_fuel-economy2 {
+  width: 89.4%;
+}
+.characteristics-item-full__score-current_fuel-economy3 {
+  width: 89.9%;
+}
+.characteristics-item-full__score-current_snow1 {
+  width: 99.7%;
+}
+.characteristics-item-full__score-current_snow2 {
+  width: 100%;
+}
+.characteristics-item-full__score-current_snow3 {
+  width: 86.5%;
+}
+.characteristics-item-full__score-current_ice1 {
+  width: 97.1%;
+}
+.characteristics-item-full__score-current_ice2 {
+  width: 71.8%;
+}
+.characteristics-item-full__score-current_ice3 {
+  width: 92.2%;
+}
+.characteristics-item-full__score-current_wet1 {
+  width: 100%;
+}
+.characteristics-item-full__score-current_wet2 {
+  width: 91%;
+}
+.characteristics-item-full__score-current_wet3 {
+  width: 91.7%;
+}
+.characteristics-item-full__score-current_dry1 {
+  width: 97.4%;
+}
+.characteristics-item-full__score-current_dry2 {
+  width: 94.5%;
+}
+.characteristics-item-full__score-current_dry3 {
+  width: 97.6%;
+}
+.characteristics-item-full__score-separators {
+  position: absolute;
+  top: 0;
+  width: 100px;
+  z-index: 2;
+}
+.characteristics-item-full__score-separator {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 10%;
+  height: 20px;
+  border-right: 1px solid black;
+  z-index: 1;
+}
+.characteristics-item-full__score_number {
+  width: 45px;
+  margin: 0;
+  display: inline-block;
+  font-family: "Gotham Bold";
+  font-size: 17px;
+  vertical-align: middle;
+}
